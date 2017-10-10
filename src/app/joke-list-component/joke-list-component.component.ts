@@ -18,6 +18,10 @@ export class JokeListComponentComponent implements OnInit {
   jokes: Joke[] = [this.joke1, this.joke2,
     this.joke3];
 
+  addJoke(joke) {
+    this.jokes.unshift(joke);
+  }
+
   constructor() { 
      }
 
