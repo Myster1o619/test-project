@@ -3,16 +3,19 @@
   <div class="form-group">
     <input type="text" 
     class="form-control"
-    placeholder="Enter the Setup">
+    placeholder="Enter the Setup"
+    #setup>
   </div>
   <div class="form-group">
     <input type="text" 
     class="form-control"
-    placeholder="Enter the Punchline">
+    placeholder="Enter the Punchline"
+    #punchline>
   </div>
   <button
   type="button" 
   class="btn btn-primary"
-  (click)="createJoke()">Create
+  (click)="createJoke(setup.value, punchline.value)"
+  >Create
   </button>
 </div>
