@@ -22,6 +22,13 @@ export class JokeListComponentComponent implements OnInit {
     this.jokes.unshift(joke);
   }
 
+  deleteJoke(joke) {
+    let indexToDelete = this.jokes.indexOf(joke);
+    if (indexToDelete !== -1) {
+      this.jokes.splice(indexToDelete,1);
+    }
+  }
+
   constructor() { 
      }
 
