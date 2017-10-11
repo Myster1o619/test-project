@@ -14,6 +14,7 @@ export class JokeComponent implements OnInit {
 
   removeJoke() {
     this.jokeDeleted.emit(this.data);
+
   }
 
 
